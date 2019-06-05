@@ -9,8 +9,11 @@ function setCart(c) {
   return cart;
 }
 
-function addToCart(item) {
- // write your code here
+function addToCart(item, itemName, itemPrice) {
+  let item = {itemName, itemPrice};
+  item[itemName] = itemPrice;
+  return item;
+  
 }
 
 function viewCart() {
